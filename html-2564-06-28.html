@@ -16,17 +16,111 @@
     <!-- heading text -->
     <h1 name="title-h1" id="title-h1">Test title h1 </h1> 
     <h2 name="title-h2" id="title-h2">Test title h2 </h2>
-    <h3 name="title-h3">Test title h3</h3>
-    <h4 name="title-h4">Test title h4</h4>
-    <h5 name="title-h5">Test title h5</h5>
-    <h6 name="title-h6">Test title h6</h6>
+    <h3 name="title-h3" id="title-h3"></h3>
+    <h4 name="title-h4" id="title-h4"></h4>
+    <h5 name="title-h5"id="title-h4"></h5>
+    <h6 name="title-h6"id="title-h4"></h6>
 
     <!-- link -->
     <a href="https://www.fms.psu.ac.th" target="_blank">คณะวิทยาการจัดการ</a>
 
     <!-- image -->
-    <img src="images/1" alt="my picture">
-    <img src="images/1" alt="my picture">
+    <img src="images/1.jpg" alt="my picture">
+    
+    <!-- <text formatting -->
+    <b><u><i>>คณะวิทยาการจัดการ</i></u></br> 
+    <br>
+    <strong>มหาวิทยาลัยสงขลานครินทร์</strong> 
+    <br>
+    คณะวิทยาการจัดการ<sub>ม.อ.</sub>
+    <br>
+    คณะวิทยาการจัดการ<sup>ม.อ.</sup>
+
+    <!-- list -->
+    <ol type="i">ประเภทของสินค้า
+        <li>เสื้อผ้า</li>
+        <li>เครื่องสำอางค์</li>
+        <li>เฟอร์นิเจอร์</li>
+        <li>คอมพิวเตอร์</li>
+    </ol>
+    <br>
+    <ul type="circle">ประเภทของสินค้า
+        <li>เสื้อผ้า</li>
+        <li>เครื่องสำอางค์</li>
+        <li>เฟอร์นิเจอร์</li>
+        <li>คอมพิวเตอร์</li>   
+
+    </ul>
+
+    <!-- block & inline element -->
+    <div>
+        มหาวิทยาลัยสงขลานครินทร์
+    </div>
+    <span>มหาวิทยาลัยสงขลานครินทร์</span>
+    <span>คณะวิทยาการจัดการ</span>
+    <br>
+
+    <!-- table -->
+    <table border="1">
+        <tr>
+            <td>#</td>
+            <td>รหัสสินค้า</td>
+            <td>ชื่อสินค้า</td>
+            <td>รายละเอียด</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>PD001</td>
+            <td>โต๊ะกินข้าว</td>
+            <td>โต๊ะกินข้าว 4 ที่นั่ง</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>PD002</td>
+            <td>โซฟา</td>
+            <td>โซฟาไม้สักบุผ้า</td>
+        </tr>
+    </table>
+
+    <!-- form -->
+    <h2>เข้าสู่ระบบ</h2>
+    <form method="GET" action="check_login.html" enctype="multipart/form-data">
+        <!-- <label for="username">รหัสผู้ใช้งาน</label> -->
+        <input type="text" id="username" placeholder="รหัสผู้ใช้งาน">
+        <br>
+        <label for="passwd">รหัสผ่าน</label>
+        <input type="password" id="passwd">
+        <input type="checkbox">จำรหัสผู้ใช้งาน
+        <br>
+        <input type="radio" name="user_type">นักศึกษา
+        <input type="radio" name="user_type" >อาจารย์
+        <br>
+        <!-- <label for="desc">รายละเอียด</label> -->
+        <textarea id="desc" rows="5"> </textarea>
+        <br>
+        <select name="type">
+            <option value="student">นักศึกษา</option>
+            <option value="lecturer">อาจารย์</option>
+
+        </select>
+        <input type="file">
+        <input type="submit" value="เข้าสู่ระบบ">
+        <input type="reset" value="ยกเลิก">
+        <br>
+        <select name="สถานะ">
+            <option value="0">เข้าสู่ระบบ</option>
+            <option value="1">ยกเลิก</option>
+        </select>
+</form>
+
+<input type="button" value="ไม่ใช่ Submit ไม่ใช่ Reset">        
+
+    
+
+
+
+
 
 </body>
+
 </html>
