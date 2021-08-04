@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var str_day = "";
+        var get_num_day = new Date().getDay();
+       // console.log(get_num_day);
+       switch(get_num_day){
+           case 0:
+               str_day = "มกราคม";
+               break;
+            case 2:
+                str_day = "กุมภาพันธ์";
+                break
+            case 7:
+                str_day = "สิงหาคม";
+                break
+        }
+        var get_num_date = new Date().getDate();
+        var get_num_year = new Date().geFullYear();
+        console.log(str_day + " ที่ " + get_num_date +  "" + str_month + "" + parseInt(new Date()) +543);
+
+        //Wed Aug 04 2021 -> วันพุธที่4 สิงหาคม 2564
+
+        //Document.getElementById("demo").innerHTML = "Today is" + day;
+    </script>
+</body>
+
+</html>
