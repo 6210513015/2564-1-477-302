@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <script>
+        function chk_login() {
+            var get_usename = document.getElementById("username").value;
+            var get_passwd = document.getElementById("passwd").value;
+            var cnt_login = 0, max_login = 3;
+            var chk_login = false;
+            do {
+                if (get_usename == "admin" && get_passwd== "1234") {
+                    chk_login = true
+                } else {
+                    chk_login = false;
+                    cnt_login++;
+                }
+
+            }
+        }
+    </script>
+
+    </form>
+
+
+
+    
+</body>
+</html>
