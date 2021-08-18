@@ -7,7 +7,7 @@
     
     <title>Student Registeration Form</title>
     <style>
-        h3{
+        h1{
             font-family: 'Roboto Condensed', sans-serif;
             font-size: 25pt;
             font-style: normal;
@@ -28,7 +28,7 @@
             border: 2px solid rgb(189, 60, 150)
         }
         table.inner{
-            border: 0px;
+            border: 2px;
         }
     </style>
 </head>
@@ -222,7 +222,7 @@
 
     <script>
         function validate_all() {
-        //first name
+        //first name//
         var fname = document.getElementById("First_Name");
         console.log(fname.value);
         if (fname.value == "") {
@@ -232,11 +232,12 @@
             alert("First name not more than 30 characters");
             fname.focus();
         }
-        // last name
+        // last name//
         var lname = document.getElementById("Last_Name");
         if (lname.value == "") {
             alert("Please enter last name");
             lname.focus();
+        
         
     }
     </script>
