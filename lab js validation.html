@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT REGISTERATION FORM </title>
-</head>
+    
     <title>Student Registeration Form</title>
     <style>
         h3{
@@ -31,13 +30,13 @@
         table.inner{
             border: 0px;
         }
-
     </style>
+</head>
 <body>
     <h3>STUDENT REGISTERATION FORM</h3>
 
-    <form > 
-        <table align="center" cellpadding="10">
+    <form onsubmit="vaildate_all()">
+        <table text-align="center" cellpadding="10">
 
             <!-- First Name -->
             <tr>
@@ -213,7 +212,7 @@
 
                 <!-- Sumit and Reset -->
                 <tr>
-                    <td colspan="2" align="center">
+                    <td colspan="2" text-align="center">
                         <input type="button" value="Sumit" onclick="vaildate_all()">
                         <input type="reset" value="Reset">
                     </td>
