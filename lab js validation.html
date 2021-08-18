@@ -23,7 +23,7 @@
             font-size: 10pt;
             font-style: normal;
             font-weight: bold;
-            text-align:;
+            text-align:center;
             background-color: palevioletred;
             border-collapse: collapse;
             border: 2px solid rgb(182, 67, 147)
@@ -36,20 +36,20 @@
 <body>
     <h3>STUDENT REGISTERATION FORM</h3>
 
-    <form  onsubmit="validate_all()"> 
+    <form > 
         <table align="center" cellpadding="10">
 
             <!-- First Name -->
             <tr>
                 <td>FIRST NAME</td>
-                <td><input type="text" name="First_Name" maxlength="30" />
+                <td><input type="text" id="First_Name" name="First_Name" maxlength="30" />
                 (max 30 characters a-z and A-Z)</td>
             </tr>
 
             <!-- Last Name -->
             <tr>
                 <td>LAST NAME</td>
-                <td><input type="text" name="Last_Name" maxlength="30" />
+                <td><input type="text" id="Last_Name" name="Last_Name" maxlength="30" />
                 (max 30 characters a-z and A-Z)</td>
             </tr>
 
@@ -214,7 +214,7 @@
                 <!-- Sumit and Reset -->
                 <tr>
                     <td colspan="2" align="center">
-                        <input type="submit" value="Sumit">
+                        <input type="button" value="Sumit" onclick="vaildate_all()">
                         <input type="reset" value="Reset">
                     </td>
                 </tr>
@@ -222,16 +222,23 @@
     </form>
 
     <script>
-    function validate_all() {
-        var frame = document.getElementById("First_Name");
-        console.log(frame.value);
+        function validate_all() {
+        //first name
+        var fname = document.getElementById("First_Name");
+        console.log(fname.value);
         if (fname.value == "") {
             alert("Please enter first name");
-            frame.focus();
+            fname.focus();
         } else if (fname.length >30) {
             alert("First name not more than 30 characters");
-            frame.focus();
+            fname.focus();
         }
+        // last name
+        var lname = document.getElementById("Last_Name");
+        if (lname.value == "") {
+            alert("Please enter last name");
+            lname.focus();
+        
     }
 </script>
 
