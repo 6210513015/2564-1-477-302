@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โรงพยาบาลหมีน้อย</title>
+    <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="PATH">
+
+    <style>
+        body {color: green; font-family:'Chakra Petch', sans-serif; font-size: 1em;}
+        p {font-weight: normal;}
+        a {font: normal 1em;}  
+        
+     </style>
+     <script>
+        function chkUsername() {
+            if(typeof(Storage) !== "undefined") {
+                if (localStorage.username) {
+                    document.getElementById("div1").innerHTML = localStorage.username;
+                } else {
+                    document.getElementById("div1").innerHTML = "<input type='text' id='username'>";
+                }
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        function saveUsername() {
+            uname = document.getElementById("username");
+            localStorage.username = uname.value;
+            chkUsername();
+        }
+        function delUsername() {
+            localStorage.removeItem("username");
+            chkUsername();
+        }
+        </script>
+    
+</head>
+<body>
+    <h1>ยินดีต้อนรับสู่โรงพยาบาลหมีน้อย</h1>
+    <body onload="chkUsername()">
+
+        ชื่อผู้ใช้งาน :<div id="div1"></div>
+        รหัสผ่าน:<div id="div2"><input type="password" id="password"></div>
+        <p><button onclick="saveUsername()" type="button">บันทึก</button>
+        <button onclick="delUsername()" type="button">ไม่จำรหัสผ่าน</button></p>
+        <div id="result"></div>
+        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <input type="submit" value="เข้าสู่ระบบ">
+    <input type="reset" value="ยกเลิก">
+    </head>
+    <body>
+       <p>คลิกเพื่อตำแหน่งที่ตั้งโรงพยาบาล</p>
+       <button onclick="getLocation()">คลิกเพื่อตำแหน่งที่ตั้ง</button>
+       <p id="demo">ผลการค้นหา</p>
+   
+       <script>
+         var x = document.getElementById("demo");
+         function getLocation() {
+           if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition, showError);
+           } else {
+               x.innerHTML = "Geolocation is not supported by this browser.";
+           }
+         }
+   
+         function showPosition(position) {
+           x.innerHTML = "Latitude: " + position.coords.latitude +
+           "<br>Longitude: " + position.coords.longitude;
+         }
+   
+         function showError(error) {
+           switch(error.code) {
+             case error.PERMISSION_DENIED:
+                 x.innerHTML = "User denied the request for Geolocation."
+                 break;
+             case error.POSITION_UNAVAILABLE:
+                 x.innerHTML = "Location information is unavailable."
+                 break;
+             case error.TIMEOUT:
+                 x.innerHTML = "The request to get user location timed out."
+                 break;
+             case error.UNKNOWN_ERROR:
+                 x.innerHTML = "An unknown error occurred."
+                 break;
+             }
+         }
+       </script>
+    
+    <div>  
+        <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+        <p><q> ยังไม่มีข่าวประชาสัมพันธ์ 
+        </q></p>  
+        <button id="hide">ปิด</button>  
+        </dialog>  
+        <button id="show">ข่าวประชาสัมพันธ์</button>  
+        </div>  
+    
+    
+        <script type="text/JavaScript">  
+            (function() {    
+                var dialog = document.getElementById('myFirstDialog');    
+                document.getElementById('show').onclick = function() {    
+                    dialog.show();    
+                };    
+                document.getElementById('hide').onclick = function() {    
+                    dialog.close();    
+                };    
+            })();  
+</script>
+    <body>    
+</body>
+</html>
