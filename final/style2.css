@@ -18,7 +18,7 @@ html::-webkit-scrollbar
 }
 html::-webkit-scrollbar-thumb
 {
-    background: rgb(236, 35, 119);
+    background:rgb(49, 134, 214);
 }
 section
 {
@@ -32,9 +32,9 @@ header
     top:0;
     left:0;
     width:100%;
-    background:rgb(248, 212, 212);
+    background:rgb(166, 208, 228);
     padding:1rem;
-    box-shadow:0 .2rem .3rem lightgray;
+    box-shadow:0 .2rem .3rem rgb(154, 189, 209);
     display: flex;
     align-items:center;
     justify-content:space-between;
@@ -217,7 +217,7 @@ button:hover
     width:100%;
     height: auto;
     padding:4rem 2rem;
-    box-shadow:0 .2rem .5rem rgb(236, 35, 119) ;
+    box-shadow:0 .2rem .5rem rgb(243, 63, 132) ;
     text-align: center;
     background:linear-gradient(rgba(224, 86, 86, 0.5),rgba(0, 0, 0, 0.5)),url("pic/Cherry-Blossom.jpg");
     border-radius: 5px;
@@ -317,7 +317,7 @@ button:hover
     padding:1.2rem;
     margin:1.5rem;
     border-radius:1rem;
-    box-shadow:0 .3rem .6rem rgb(236, 35, 119);
+    box-shadow:0 .3rem .6rem rgb(35, 38, 236);
     text-align: center;
 }
 .fes .inner-festival-col:hover 
@@ -361,98 +361,27 @@ button:hover
     }
 }
 /*----------------Plan your trip---------*/
-.service .cake-list 
-{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    list-style: none;
-    padding:1rem 0;
-    margin:1.5rem 0;
-    border-top:.2rem dotted limegreen;
-    border-bottom:.2rem dotted limegreen;
+.trip img {
+    margin: auto;
+    display: block;
+    object-fit:cover;
+    width: 90%;
+    height: 350px;
 }
-.service .cake-list .btn1 
-{
-    width:8rem;
-    padding:.6rem;
-    border-radius: 5px;
-    border: none;
-    background:rgb(236, 35, 119);
-    color:#fff;
-    font-size: 0.8rem;
-    font-weight:600;
-    letter-spacing: .1rem;
-    margin:1rem;
+.trip p {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.trip-text{
     text-align:center;
-}
-.service .cake-list .btn1.active,
-.service .cake-list .btn1:hover 
-{
-    transition: .5s ease;
-    background:limegreen;
-    cursor: pointer;
-}
-.service .cake-row
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.service .cake-row .image
-{
-    margin:1.5rem;
-    padding:1rem;
-    flex:1 1 21rem;
-    border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgb(236, 35, 119);
-}
-.service .cake-row .image img 
-{
-    width:100%;
-    object-fit: cover;
-    height: 20rem;
-}
-.service .cake-content
-{
-    flex:1 1 21rem;
-}
-.service .cake-content .cake-info
-{
-    padding:1rem 4rem;
-}
-.service .cake-content .cake-info h3 
-{
-    font-size: 1.5rem;
+    font-size:3rem;
+    padding:0.5rem;
     color:rgb(236, 35, 119);
 }
-.service .cake-content .cake-info a i
-{
-    padding: 1rem 1rem 0 0;
-    font-size: 1.5rem;
-    color:limegreen;
-}
-.service .cake-content .cake-info a
-{
-    font-size: 1rem;
-    font-weight:600;
-    color:darkblue;
-    cursor: pointer;
-}
-.service .cake-content .cake-info a:hover 
-{
-    text-decoration:underline;   
-}
-@media(max-width:768px)
-{
-    .service .cake-list .btn1 
-    {
-        display:inline-block;
-        margin:.2rem;
-        font-size:.6rem;
-    }
-}
+
 /*-------------Place to go-----------*/
 .places img {
     margin: auto;
@@ -478,35 +407,94 @@ button:hover
    
 
 /*----------------Thing to do---------*/
-
+#things .things {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+#things .things-header h1 {
+	margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
+#things .things-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#things .things-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#things .things-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#things .things-info h1 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+#things .things-info p {
+	color: white;
+}
+#things .things-img {
+	flex-basis: 20%;
+	height: 100px;
+	overflow: hidden;
+	position:static;
+}
+#things .things-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+}
 /*---------------------contact us---------*/
 .contact
 {
     padding-top:8.5rem;
 }
-.cake-contact
+.Travel-contact
 {
     width:100%;
     background:whitesmoke;
 }
-.cake-contact-row
+.Travel-contact-row
 {   
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
 }
-.cake-contact-col 
+.Travel-contact-col 
 {
     margin:2rem;
     flex: 1 1 20rem;
     text-align:center;
 }
-.cake-contact-col .images 
+.Travel-contact-col .images 
 {
     border:1px solid #fff;
 }
-.cake-contact-col img
+.Travel-contact-col img
 {
     width:90%;
     height:auto;
@@ -516,13 +504,13 @@ button:hover
     border:1px solid transparent;
     border-radius: 1rem;   
 }
-.cake-contact-col h1 
+.Travel-contact-col h1 
 {
     padding:1rem 0;
     color:rgb(236, 35, 119);
     letter-spacing: .1rem;
 }
-.cake-contact-col .social i
+.Travel-contact-col .social i
 {
     padding:.8rem;
     border: none;
@@ -531,20 +519,20 @@ button:hover
     color:#fff;
     font-size: 1.5rem;
 }
-.cake-contact-col .social i:hover 
+.Travel-contact-col .social i:hover 
 {
     transition: 0.5s ease;
     background: limegreen;
     color:#fff;
     cursor: pointer;
 }
-.cake-contact-col p 
+.Travel-contact-col p 
 {
     padding:.5rem 0;
     line-height:1.5rem;
     color:gray;
 }
-.cake-contact-col input, .cake-contact-col textarea 
+.Travel-contact-col input, .Travel-contact-col textarea 
 {
     width:80%;
     padding:1rem;
