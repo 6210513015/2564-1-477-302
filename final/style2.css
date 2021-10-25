@@ -18,7 +18,7 @@ html::-webkit-scrollbar
 }
 html::-webkit-scrollbar-thumb
 {
-    background:rgb(49, 134, 214);
+    background: #012443;
 }
 section
 {
@@ -32,9 +32,9 @@ header
     top:0;
     left:0;
     width:100%;
-    background:rgb(166, 208, 228);
+    background:#003171;
     padding:1rem;
-    box-shadow:0 .2rem .3rem rgb(154, 189, 209);
+    box-shadow:0 .2rem .3rem #003171;
     display: flex;
     align-items:center;
     justify-content:space-between;
@@ -42,6 +42,7 @@ header
 header .logo h2 
 {
     text-decoration: none;
+    color: #FFF;
 }
 header .navigate ul 
 {
@@ -57,19 +58,19 @@ header .navigate ul li
 header .navigate ul li a 
 {
     font-size: 1.2rem;
-    color:limegreen;
+    color:rgb(255, 255, 255);
     text-decoration:none;
     font-weight: 500;
 }
 header .navigate ul li a.active,
 header .navigate ul li a:hover 
 {
-    color:rgb(236, 35, 119);
+    color:#FFF;
 }
 header #menu 
 {
     font-size: 2rem;
-    color:rgb(236, 35, 119);
+    color:#3665b1;
     cursor: pointer;
     display: none;
 }
@@ -112,8 +113,8 @@ header #menu
     header .navigate ul li a:hover,
     header .navigate ul li a.active 
     {
-        color:rgb(236, 35, 119);
-        border-color:rgb(236, 35, 119);
+        color:#59ABE3;
+        border-color:#044F67;
     }
     header .navigate.nav-toggle
     {
@@ -129,7 +130,7 @@ header #menu
 /*----------------section-------------*/
 .home 
 {
-    background:linear-gradient(rgba(241, 155, 155, 0.5),rgba(0, 0, 0, 0.5)),url("pic/1.jpg");
+    background:linear-gradient(rgba(32, 42, 177, 0.5),rgba(0, 0, 0, 0.5)),url("pic/1.jpg");
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -139,7 +140,7 @@ header #menu
 {
     padding-top:20%;
     font-size:4rem;
-    text-shadow: 2px 2px #fa4975;
+    text-shadow: 2px 2px #003171;
     letter-spacing: 1px;
 }
 .home p 
@@ -162,19 +163,19 @@ header #menu
     text-align: center;
     letter-spacing: 1px;
     color:#fff;
-    background:rgb(236, 35, 119); 
+    background:rgb(27, 89, 139); 
 }
 button i 
 {
     margin-left: .5rem;
-   font-size:1rem;
-   text-align: center;
-   transition: 2s ease;
-   animation: animate .5s ease infinite;
+    font-size:1rem;
+    text-align: center;
+    transition: 2s ease;
+    animation: animate .5s ease infinite;
 }
 button:hover 
 {
-    background:rgb(228, 3, 96);
+    background:#59ABE3;
     
 }
 @keyframes animate 
@@ -254,7 +255,7 @@ button:hover
     padding:.6rem;
     border-radius: 5px;
     border: none;
-    background:rgb(236, 35, 119);
+    background:#19B5FE;
     color:#fff;
     font-size: 1rem;
     font-weight:600;
@@ -295,11 +296,11 @@ button:hover
     text-align:center;
     font-size:3rem;
     padding:0.5rem;
-    color:rgb(236, 35, 119);
+    color:#4D8FAC;
 }
 .title span
 {
-    color:limegreen;
+    color:#234a66;
 }
 .fes .inner-festival-row
 {
@@ -317,8 +318,9 @@ button:hover
     padding:1.2rem;
     margin:1.5rem;
     border-radius:1rem;
-    box-shadow:0 .3rem .6rem rgb(35, 38, 236);
+    box-shadow:0 .3rem .6rem #003171;
     text-align: center;
+    position: static;
 }
 .fes .inner-festival-col:hover 
 {
@@ -335,22 +337,26 @@ button:hover
 .star
 {
     color: #FFDF00;
-    position:relative;
+    position:static;
     margin-top: 1.7rem;
 }
 .fes .inner-festival-col h2
 {
     padding: .5rem 0;
-    color:darkblue;
+    color:#1F4788;
     font-size:1.4rem;
     letter-spacing:.1rem;
 }
 .fes .inner-festival-col p 
 {
-    color:gray;
+    color:#000;
     font-size: 0.8rem;
     font-weight: 500;
     padding:.5rem 0;
+}
+.time img {
+    margin: auto;
+    display: block;
 }
 @media(max-width:768px)
 {
@@ -379,7 +385,7 @@ button:hover
     text-align:center;
     font-size:3rem;
     padding:0.5rem;
-    color:rgb(236, 35, 119);
+    color:#234a66;
 }
 
 /*-------------Place to go-----------*/
@@ -401,71 +407,31 @@ button:hover
     text-align:center;
     font-size:3rem;
     padding:0.5rem;
-    color:rgb(236, 35, 119);
+    color:#234a66;
 }
 
    
 
 /*----------------Thing to do---------*/
-#things .things {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 30px 0;
+.things img {
+    margin: auto;
+    display: block;
+    object-fit:cover;
+    width: 90%;
+    height: 350px;
 }
-#things .things-header h1 {
-	margin-bottom: 50px;
-    text-align: center;
-    font-size: 3rem;
+.things p {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
-#things .things-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#things .things-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#things .things-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-#things .things-info h1 {
-	font-size: 2rem;
-	font-weight: 500;
-}
-#things .things-info p {
-	color: white;
-}
-#things .things-img {
-	flex-basis: 20%;
-	height: 100px;
-	overflow: hidden;
-	position:static;
-}
-#things .things-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0.7;
+.things-text{
+    text-align:center;
+    font-size:3rem;
+    padding:0.5rem;
+    color:#234a66;
 }
 /*---------------------contact us---------*/
 .contact
@@ -507,7 +473,7 @@ button:hover
 .Travel-contact-col h1 
 {
     padding:1rem 0;
-    color:rgb(236, 35, 119);
+    color:#5D8CAE;
     letter-spacing: .1rem;
 }
 .Travel-contact-col .social i
@@ -515,14 +481,14 @@ button:hover
     padding:.8rem;
     border: none;
     border-radius: 1rem;
-    background:rgb(236, 35, 119);
+    background:#19B5FE;
     color:#fff;
     font-size: 1.5rem;
 }
 .Travel-contact-col .social i:hover 
 {
     transition: 0.5s ease;
-    background: limegreen;
+    background: #59ABE3;
     color:#fff;
     cursor: pointer;
 }
@@ -530,7 +496,8 @@ button:hover
 {
     padding:.5rem 0;
     line-height:1.5rem;
-    color:gray;
+    color:#000;
+    text-align: center;
 }
 .Travel-contact-col input, .Travel-contact-col textarea 
 {
@@ -538,7 +505,7 @@ button:hover
     padding:1rem;
     margin-bottom:1.2rem;
     border:none;
-    border-bottom:.1rem dotted rgb(236, 35, 119);  
+    border-bottom:.1rem dotted #4D8FAC;  
 }
 .Travel-contact-col textarea
 {
@@ -548,17 +515,18 @@ button:hover
 {
     margin-top:5rem;
     padding:3rem;
-    text-align:center;
-    background: gray;
+    background: #042653;
 }
 .copyright i 
 {
     font-size:2rem;
     color:#fff;
+    text-align: center;
 }
 .copyright p 
 {
     letter-spacing: .1rem;
     font-size: 1.5rem;
     color:#fff;
+    text-align: center;
 }
